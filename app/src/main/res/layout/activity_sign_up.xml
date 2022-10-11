@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hideKeyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:nestedScrollingEnabled="true"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/lblSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSignUpPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/custom_signup_password_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:hint="Password"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/off_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpEmail" />
+
+    <EditText
+        android:id="@+id/etSignUpName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/custom_signup_name_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/off_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSignUpDetails" />
+
+    <EditText
+        android:id="@+id/etSignUpPhone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/custom_signup_phone_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="@color/off_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpPasswordConfirmation" />
+
+    <EditText
+        android:id="@+id/etSignUpEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/custom_signup_email_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/off_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpName" />
+
+    <EditText
+        android:id="@+id/etSignUpAddress"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/custom_signup_address_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:hint="Purok"
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:textColor="@color/off_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpPhone" />
+
+    <EditText
+        android:id="@+id/etSignUpPasswordConfirmation"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/custom_signup_password_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:hint="Password Confirmation"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/off_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpPassword" />
+
+    <TextView
+        android:id="@+id/lblSignUpDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:text="Enter your details"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpName"
+        app:layout_constraintTop_toBottomOf="@+id/lblSignUp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpAddress" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/lblSignUpLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/font_montserrat_bold"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:text="Login here."
+            android:textColor="@color/login_and_sign_up_word"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/lblAlreadyHaveAccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblAlreadyHaveAccount"
+            app:layout_constraintTop_toTopOf="@+id/lblAlreadyHaveAccount" />
+
+        <TextView
+            android:id="@+id/lblAlreadyHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_montserrat_bold"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Already have an account?"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:text="Name already exist"
+        android:textColor="#FF0000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpName"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpName" />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:text="Email already registered"
+        android:textColor="#FF0000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpEmail" />
+
+    <TextView
+        android:id="@+id/lblNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Phone number already registered"
+        android:textColor="#FF0000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpPhone"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpPhone" />
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:text="Password not similar"
+        android:textColor="#FF0000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpPassword" />
+
+    <TextView
+        android:id="@+id/lblAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/font_montserrat_bold"
+        android:text="Invalid Purok"
+        android:textColor="#FF0000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpAddress"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#04C12D</color>
+    <color name="primary_variant">#03AA28</color>
+    <color name="primary_variant_2">#05BE2E</color>
+    <color name="purple_200">#CE93D8</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="off_black">#323232</color>
+    <color name="white">#FFFFFF</color>
+    <color name="off_white">#F5F5F5</color>
+
+    <color name="login_and_sing_up">@color/primary</color>
+    <color name="login_and_sign_up_word">@color/primary_variant</color>
+    <color name="programs_and_announcements">@color/primary_variant_2</color>
+    <color name="programs_and_announcements_background">@color/off_white</color>
+    <color name="read_more">#069726</color>
+    <color name="back_icon">@color/primary</color>
+    <color name="send_icon">@color/primary</color>
+    <color name="user_bubble">@color/primary</color>
+    <color name="bot_bubble">#F2F2F2</color>
+    <color name="edit_text">@color/primary</color>
+    <color name="edit_text_active">@color/primary</color>
+</resources>

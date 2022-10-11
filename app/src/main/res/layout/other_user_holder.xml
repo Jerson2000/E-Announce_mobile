@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingEnd="120dp">
+
+    <TextView
+        android:id="@+id/otherUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Announcer"
+        app:layout_constraintBottom_toTopOf="@+id/otherUserBubble"
+        app:layout_constraintStart_toStartOf="@+id/otherUserBubble" />
+
+    <TextView
+        android:id="@+id/otherUserBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_other_user_holder"
+        android:padding="10dp"
+        android:text="The message here."
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
