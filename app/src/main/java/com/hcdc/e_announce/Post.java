@@ -65,6 +65,7 @@ public class Post {
                             callBack.onSuccess(array);
                         } catch (JSONException e) {
                             Log.e("MYSQL", e.getMessage());
+                            Log.e("MYSQL", response);
                         }
                     }
                 },
@@ -98,6 +99,7 @@ public class Post {
                             callBack.onSuccess(array);
                         } catch (JSONException e) {
                             Log.e("MYSQL", e.getMessage());
+                            Log.e("MYSQL", response);
                         }
                     }
                 },
