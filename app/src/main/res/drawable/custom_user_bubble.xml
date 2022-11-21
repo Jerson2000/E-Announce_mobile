@@ -6,7 +6,8 @@
             <solid android:color="@color/user_bubble"/>
             <corners android:topLeftRadius="10dp"
                 android:topRightRadius="10dp"
-                android:bottomLeftRadius="10dp"/>
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="0dp"/>
         </shape>
     </item>
 
