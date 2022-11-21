@@ -34,7 +34,7 @@ import java.util.Map;
 
 public class Post {
 
-    final String IP_ADDRESS = "192.168.31.239";
+    final String IP_ADDRESS = "10.10.10.63";
     String BASE_URL = "http://" + IP_ADDRESS + "/";
 //    final String BASE_URL = "https://345a-210-1-128-68.ap.ngrok.io/";
     final String URL = BASE_URL + "e-announce/";

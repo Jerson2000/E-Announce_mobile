@@ -2,6 +2,7 @@ package com.hcdc.e_announce;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.util.Pair;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -55,7 +56,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         chatBotButton = findViewById(R.id.chatBotButton);
         btnAllEvents = findViewById(R.id.btnAllEvents);
         manager = new LinearLayoutManager(context);
-        eventsView.setLayoutManager(manager);
+        eventsView.setLayoutManager(new GridLayoutManager(this,2));
 //        initDatePicker();
         initMaterialDatePicker();
         dateButton.setText("All");
